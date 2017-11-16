@@ -1,9 +1,9 @@
 #!/bin/bash
 instfiles="fuseisomenu.desktop fuseisomenu.sh"
-KDE4SRVDIR="${HOME}/.kde/share/kde4/services"
-MENUDIR="${KDE4SRVDIR}/ServiceMenus"
+KDE5SRVDIR="${HOME}/.local/share/kservices5/ServiceMenus/"
+MENUDIR="${KDE5SRVDIR}/ServiceMenus"
 
-if [ -d $KDE4MENUDIR ]; then
+if [ -d $KDE5MENUDIR ]; then
     mkdir -p ${MENUDIR} 2>/dev/null
     echo -n "Installing menu to $MENUDIR ... "
     cp -a $instfiles ${MENUDIR}
